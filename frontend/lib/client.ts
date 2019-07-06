@@ -3,9 +3,13 @@ import "isomorphic-fetch";
 
 export class Client {
   static readonly uri = "http://localhost:4000";
+
+  //サーバーなら呼んでも問題ないクライアント
   private static serverCLient = new ApolloClient({
     uri: Client.uri
   });
+
+  //クライアントで呼ばれる日には絶対安心なクライアント？
   private static clientClient: ApolloClient<any>;
 
   public static get client(): ApolloClient<any> {
