@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev index.ts "
+  },
+  "dependencies": {
+    "@types/graphql": "^14.2.2",
+    "graphql": "^14.4.2",
+    "graphql-yoga": "^1.18.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.4"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.5.2"
+  }
+}
