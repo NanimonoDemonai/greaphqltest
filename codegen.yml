@@ -1,0 +1,8 @@
+overwrite: true
+schema: "http://localhost:4000"
+documents: "./frontend/queries/*.ts"
+generates:
+  ./frontend/queries/types.ts:
+    plugins:
+      - typescript
+      - typescript-operations

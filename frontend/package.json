@@ -7,11 +7,14 @@
     "dev": "yarn next"
   },
   "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "graphql": "^14.4.2",
+    "isomorphic-fetch": "^2.2.1",
+    "mobx": "^5.11.0",
+    "mobx-react-lite": "^1.4.1",
     "next": "^8.1.1-canary.69",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "mobx": "^5.11.0",
-    "mobx-react-lite": "^1.4.1"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@types/graphql": "^14.2.2",
@@ -19,6 +22,7 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
     "babel-preset-mobx": "^2.0.0",
+    "graphql-tag": "^2.10.1",
     "typescript": "^3.5.2"
   }
 }
