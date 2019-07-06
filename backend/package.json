@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "@types/graphql": "^14.2.2",
+    "@types/uuid": "^3.4.5",
     "graphql": "^14.4.2",
     "graphql-yoga": "^1.18.0",
     "reflect-metadata": "^0.1.13",
-    "type-graphql": "^0.17.4"
+    "type-graphql": "^0.17.4",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.40",

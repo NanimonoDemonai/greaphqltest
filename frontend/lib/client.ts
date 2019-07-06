@@ -1,4 +1,5 @@
 import ApolloClient from "apollo-boost";
+import "isomorphic-fetch";
 
 export class Client {
   static readonly uri = "http://localhost:4000";

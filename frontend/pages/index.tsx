@@ -28,7 +28,7 @@ const Index: NextPage<{ model: PageModel }> = props => {
 
 Index.getInitialProps = async () => {
   const controller = new PageController();
-  await controller.fetchKani();
+  await controller.fetchKaniSay();
   return { model: controller };
 };
 

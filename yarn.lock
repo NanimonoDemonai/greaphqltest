@@ -29,6 +29,26 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
+"@babel/core@^7.5.0":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.5.0.tgz#6ed6a2881ad48a732c5433096d96d1b0ee5eb734"
+  integrity sha512-6Isr4X98pwXqHvtigw71CKgmhL1etZjPs5A67jL/w0TkLM9eqmFR40YrnJvEc1WnMZFsskjsmid8bHZyxKEAnw==
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/generator" "^7.5.0"
+    "@babel/helpers" "^7.5.0"
+    "@babel/parser" "^7.5.0"
+    "@babel/template" "^7.4.4"
+    "@babel/traverse" "^7.5.0"
+    "@babel/types" "^7.5.0"
+    convert-source-map "^1.1.0"
+    debug "^4.1.0"
+    json5 "^2.1.0"
+    lodash "^4.17.11"
+    resolve "^1.3.2"
+    semver "^5.4.1"
+    source-map "^0.5.0"
+
 "@babel/generator@^7.4.4", "@babel/generator@^7.5.0":
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.5.0.tgz#f20e4b7a91750ee8b63656073d843d2a736dca4a"
@@ -219,6 +239,15 @@
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.5.0.tgz#7f0c17666e7ed8355ed6eff643dde12fb681ddb4"
   integrity sha512-EgCUEa8cNwuMrwo87l2d7i2oShi8m2Q58H7h3t4TWtqATZalJYFwfL9DulRe02f3KdqM9xmMCw3v/7Ll+EiaWg==
+  dependencies:
+    "@babel/template" "^7.4.4"
+    "@babel/traverse" "^7.5.0"
+    "@babel/types" "^7.5.0"
+
+"@babel/helpers@^7.5.0":
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.5.1.tgz#65407c741a56ddd59dd86346cd112da3de912db3"
+  integrity sha512-rVOTDv8sH8kNI72Unenusxw6u+1vEepZgLxeV+jHkhsQlYhzVhzL1EpfoWT7Ub3zpWSv2WV03V853dqsnyoQzA==
   dependencies:
     "@babel/template" "^7.4.4"
     "@babel/traverse" "^7.5.0"
@@ -804,14 +833,6 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@graphql-codegen/add@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/add/-/add-1.3.1.tgz#728005ee15dc1561d315aeed9e99bac63d43150e"
-  integrity sha512-W1L9HaR+bkZxg5D4POAMSm6/NGGXj61OGfZ9kjeme/0oprAn9QN9g8bfaJOMHtPAqRPBKV8trZ3ZieqIog9jAw==
-  dependencies:
-    "@graphql-codegen/plugin-helpers" "1.3.1"
-    tslib "1.10.0"
-
 "@graphql-codegen/cli@^1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.3.1.tgz#0de52d2ec6f652f573bce1fb3d5c8c9785ead0e5"
@@ -864,16 +885,6 @@
     graphql-toolkit "0.2.14"
     tslib "1.10.0"
 
-"@graphql-codegen/near-operation-file-preset@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/near-operation-file-preset/-/near-operation-file-preset-1.3.1.tgz#f0b8b90bf3399966a70c7d40260749820090c08c"
-  integrity sha512-PXoGiveYvOxQEAsyZsRqzR6gikcMUMgJ0wkNoiFVYr3qFACWom5hSx9oazUHMDUwPbbC+PMzJpdmq3cBB9CG6g==
-  dependencies:
-    "@graphql-codegen/add" "1.3.1"
-    "@graphql-codegen/plugin-helpers" "1.3.1"
-    "@graphql-codegen/visitor-plugin-common" "1.3.1"
-    tslib "1.10.0"
-
 "@graphql-codegen/plugin-helpers@1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.3.1.tgz#b707257d23b0e291a2a38c14fb0d44816485c808"
@@ -882,14 +893,6 @@
     change-case "3.1.0"
     common-tags "1.8.0"
     import-from "3.0.0"
-    tslib "1.10.0"
-
-"@graphql-codegen/typescript-graphql-files-modules@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-graphql-files-modules/-/typescript-graphql-files-modules-1.3.1.tgz#eb140f5f337b3d5980d10c7a119eb041d0313e35"
-  integrity sha512-nBxYXJbT1QEj6yytsbCF21ZFhJHjstqxgEmu85+1rWBg9Wv83tYItq7pOKHyJzr0l+RzyxeqdDEFXSOdHiJQog==
-  dependencies:
-    "@graphql-codegen/plugin-helpers" "1.3.1"
     tslib "1.10.0"
 
 "@graphql-codegen/typescript-operations@1.3.1":
@@ -1088,6 +1091,13 @@
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
+
+"@types/uuid@^3.4.5":
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-3.4.5.tgz#d4dc10785b497a1474eae0ba7f0cb09c0ddfd6eb"
+  integrity sha512-MNL15wC3EKyw1VLF+RoVO4hJJdk9t/Hlv3rt1OL65Qvuadm4BYo6g9ZJQqoq7X8NBFSsQXgAujWciovh2lpVjA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/valid-url@1.0.2":
   version "1.0.2"
