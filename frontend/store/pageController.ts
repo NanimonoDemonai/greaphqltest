@@ -1,8 +1,8 @@
 import { observable } from "mobx";
-import * as QueryType from "../queries/types";
 import { Client } from "../lib/client";
 import { getHello } from "../queries/hello";
 import * as kaniQuery from "../queries/kani";
+import * as QueryType from "../queries/types";
 
 export interface PageModel {
   text: string;
@@ -10,6 +10,7 @@ export interface PageModel {
 
 export class PageController implements PageModel {
   @observable text: string = "";
+
   constructor(model: PageModel = { text: "" }) {
     this.initialize(model);
   }
@@ -22,7 +23,6 @@ export class PageController implements PageModel {
     const res = await Client.client.query<QueryType.GetKaniQuery>({
       query: kaniQuery.getKani
     });
-
     this.text = res.data.getKani.name;
   }
 
@@ -32,6 +32,7 @@ export class PageController implements PageModel {
     });
     this.text = res.data.sayKani;
   }
+
   async fetchHello() {
     const res = await Client.client.query<QueryType.GetHelloQuery>({
       query: getHello

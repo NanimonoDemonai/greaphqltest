@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev index.ts "
+    "dev": "ts-node-dev index.ts",
+    "build":"NODE_ENV=production parcel build index.ts --target node",
+    "start": "NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
     "@types/graphql": "^14.2.2",
-    "@types/uuid": "^3.4.5",
     "graphql": "^14.4.2",
     "graphql-yoga": "^1.18.0",
     "reflect-metadata": "^0.1.13",
@@ -16,6 +17,8 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@types/uuid": "^3.4.5",
+    "parcel": "^1.12.3",
     "ts-node-dev": "^1.0.0-pre.40",
     "typescript": "^3.5.2"
   }

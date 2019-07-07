@@ -10,7 +10,7 @@ export class Client {
   });
 
   //クライアントで呼ばれる日には絶対安心なクライアント？
-  private static clientClient: ApolloClient<any>;
+  private static clientClient: ApolloClient<any> | null;
 
   public static get client(): ApolloClient<any> {
     if (!process.browser) {

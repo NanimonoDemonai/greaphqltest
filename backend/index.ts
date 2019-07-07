@@ -15,6 +15,7 @@ const main = async () => {
 
   server.start(
     {
+      playground: process.env.NODE_ENV === "production" ? false : "/",
       cors: {
         credentials: true,
         origin: ["http://localhost:3000"]
